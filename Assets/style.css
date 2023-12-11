@@ -46,4 +46,48 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+
+}
+
+#cool {
+    background-color: rgb(169, 169, 248);
+    margin: 10px;
+}
+
+#aboutMe, #work, #contactMe {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    }
+
+.blank {
+    width: 10%;
+    /* border: 2px solid black; */
+}
+
+.tab {
+    border-right: 2px solid black;
+    width: 10%;
+    margin-right: 5px;
+    text-align: right;
+    padding-right: 5px;
+    }
+
+.right_side_info {
+    width: 80%;
+    padding-left: 10px;
+}
+
+#projects {
+    display: grid;
+}
+
+#contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
