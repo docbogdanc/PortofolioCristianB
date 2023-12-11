@@ -1,0 +1,49 @@
+/* remove spaces between main elements*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*set the items in body to be display flexible vertically*/
+body {
+    display:flex;
+    flex-direction: column;
+}
+
+/* set the background, font color and flexbox settings */
+#header {
+    background-color: black;
+    color: rgb(169, 169, 248);
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* name box */
+#name {
+    background-color: rgb(169, 169, 248);
+    color: black;
+    margin: 5px;
+    padding: 3px;
+}
+
+/* links towards right and spaced by using a flexbox */
+.list {
+    width: 30%;
+    display : flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    margin-right: 30px;
+}
+
+/* background stretched all width */
+#firstBackground {
+    width: 100%;
+    height: 200px;
+       background-image: url(../Images/back2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
