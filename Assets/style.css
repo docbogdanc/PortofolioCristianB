@@ -251,7 +251,7 @@ span {
 
 
 
-@media (max-width : 300px) {
+@media screen and (max-width : 300px) {
     
     /* remove spaces between main elements*/
 * {
