@@ -18,7 +18,7 @@ body {
     flex-direction: column;
 }
 
-/* set the background, font color and flexbox settings */
+/* set the background, font color and flexbox settings  for header section*/
 #header {
     background-color: rgb(102, 82, 141);
     color: rgb(217, 217, 241);
@@ -28,6 +28,7 @@ body {
     align-items: center;
 }
 
+/* changing color for links */
 #header a {
     color: aliceblue;
 }
@@ -51,7 +52,7 @@ body {
     margin-right: 30px;
 }
 
-/* background stretched all width */
+/* background stretched all width with message item on the right bottom*/
 #firstBackground {
     width: 100%;
     height: 200px;
@@ -62,9 +63,9 @@ body {
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-end;
-
 }
 
+/* message style */
 #cool {
     background-color: rgb(150, 150, 247, 0.7);
     margin: 10px;
@@ -72,6 +73,7 @@ body {
     border-radius: 7px;
 }
 
+/* the three sections are style in a horizontal flexbox each*/
 #aboutMe, #work, #contactMe {
     display: flex;
     flex-direction: row;
@@ -79,11 +81,11 @@ body {
     margin-bottom: 20px;
     }
 
-    /* adding a blank element to the left */
-/* .blank { */
-    /* width: 10%; */
-    /* border: 2px solid black; */
-
+/* the main  */
+#work {
+    height: 500px;
+    margin-top: -10px;
+}
 
 .tab {
     border-right: 2px solid black;
@@ -96,18 +98,17 @@ body {
 
 .right_side_info {
     width: 85%;
-    margin-left: 15px;
+    margin-left: 5px;
 }
 
-#projects {
+#projects-grid {
+    margin-top: 0px;
     display: grid;
-    padding-left: 10px;
-    grid-template-areas: "surf surf"
-                        "surf surf"
-                        "surf surf"
+    padding-left: 5px;
+    grid-template-areas:"surf surf"
                         "led calculator"
                         "pastel run";
-    height: 300px;
+    height: 500px;
     gap: 7px;
 }
 
@@ -116,15 +117,24 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     border: 3px solid rgb(150, 150, 235);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+   
+
 
 }
 
 #surf {
+    min-height: 210px;
     grid-area: surf;
-    background-color: rgb(152, 152, 156);
+    background-image: url(../Images/02-portfolio-4.jpg);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    margin-top: 20px;
 }
 
 
@@ -134,9 +144,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
 }
 
 #calculator {
@@ -145,9 +152,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
 }
 
 #pastel {
@@ -156,47 +160,38 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    margin-bottom: 20px;
 }
 
 #run {
     grid-area: run;
     background-image: url(../Images/02-run-buddy.jpg);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    background-position: center;
+    margin-bottom: 20px;
 }
 
 .text_box {
     display: flex;
     flex-direction: column;
-    background-color: rgb(150, 150, 235);
-    align-self: flex-start;
+    justify-content: flex-end;
     color: black;
-    padding: 3px;
-    margin-bottom: 10px;
-
+    padding: 0;
+    border: 2px solid black;
+    max-height: fit-content;
+    font-weight: 700;
+    align-self: flex-start;
+    background-color: rgb(150, 150, 235, 0.4);
 }
 
-.text_box p {
-    font-size: x-small;
+span {
+    font-size: xx-small;
 }
-
-.text_box 
 
 #contacts {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    border: 2px solid black;
-    ;
-}
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 700;
 
-li {
-    list-style-type: none;
+    
 }
