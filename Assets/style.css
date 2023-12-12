@@ -20,7 +20,7 @@ body {
 
 /* set the background, font color and flexbox settings  for header section*/
 #header {
-    background-color: rgb(102, 82, 141);
+    background-color: rgb(74, 64, 95);
     color: rgb(217, 217, 241);
     display : flex;
     flex-direction: row;
@@ -30,7 +30,9 @@ body {
 
 /* changing color for links */
 #header a {
-    color: aliceblue;
+    color: rgb(150, 150, 235);
+    text-decoration: none;
+    border-bottom: 4px solid;
 }
 
 /* name box */
@@ -65,6 +67,14 @@ body {
     align-items: flex-end;
 }
 
+/* phot of me floatin left under name */
+img {
+    position : absolute;
+    float: left;
+    margin-top: 150px;
+    margin-left: 20px;
+}
+
 /* message style */
 #cool {
     background-color: rgb(150, 150, 247, 0.7);
@@ -87,20 +97,22 @@ body {
     margin-top: -10px;
 }
 
+/* styling for left side of "work" section */
 .tab {
     border-right: 2px solid black;
     width: 15%;
     margin-right: 5px;
     text-align: right;
     padding-right: 5px;
-    /* border: 2px solid black; */
     }
 
+    /* styling width size for right side  */
 .right_side_info {
     width: 85%;
     margin-left: 5px;
 }
 
+/* stying the grid of "work" section */
 #projects-grid {
     margin-top: 0px;
     display: grid;
@@ -112,6 +124,7 @@ body {
     gap: 7px;
 }
 
+/* the styling for grid items */
 .project_items {
     background-position: center;
     background-repeat: no-repeat;
@@ -122,9 +135,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-   
-
-
 }
 
 #surf {
@@ -170,6 +180,7 @@ body {
     margin-bottom: 20px;
 }
 
+/* style for text box from inside grid items */
 .text_box {
     display: flex;
     flex-direction: column;
@@ -187,11 +198,21 @@ span {
     font-size: xx-small;
 }
 
+#work a {
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+/* styling for footer */
 #contacts {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-weight: 700;
-
     
+}
+
+#contacts a {
+    font-weight: 900;
+    text-decoration: none;
+    border-bottom: 4px solid ;
 }
