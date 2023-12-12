@@ -71,7 +71,7 @@ body {
 img {
     position : absolute;
     float: left;
-    margin-top: 150px;
+    margin-top: 250px;
     margin-left: 20px;
 }
 
@@ -121,17 +121,16 @@ img {
                         "led calculator"
                         "pastel run";
     height: 500px;
-    gap: 7px;
+    gap: 10px;
 }
 
 /* the styling for grid items */
-.project_items {
+#projects-grid a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
     border: 3px solid rgb(150, 150, 235);
     background-repeat: no-repeat;
-    background-size: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -141,6 +140,9 @@ img {
     min-height: 210px;
     grid-area: surf;
     background-image: url(../Images/02-portfolio-4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -151,36 +153,42 @@ img {
 #led {
     grid-area: led;
     background-image: url(../Images/02-portfolio-1.jpg);
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
 }
 
 #calculator {
     grid-area: calculator;
     background-image: url(../Images/02-portfolio-2.jpg);
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
 }
 
 #pastel {
     grid-area: pastel;
     background-image: url(../Images/02-portfolio-3.jpg);
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
     margin-bottom: 20px;
 }
 
 #run {
     grid-area: run;
     background-image: url(../Images/02-run-buddy.jpg);
+    background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     margin-bottom: 20px;
 }
 
 /* style for text box from inside grid items */
+.project_items {
+    display: flex;
+    flex-direction: column-reverse;
+}
 .text_box {
     display: flex;
     flex-direction: column;
