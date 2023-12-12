@@ -88,15 +88,102 @@ body {
 
 .right_side_info {
     width: 85%;
-    padding-left: 10px;
+    margin-left: 15px;
 }
 
 #projects {
     display: grid;
+    padding-left: 10px;
+    grid-template-areas: "surf surf"
+                        "surf surf"
+                        "surf surf"
+                        "led calculator"
+                        "pastel run";
+    height: 300px;
+    gap: 7px;
 }
+
+.project_items {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 3px solid rgb(150, 150, 235);
+
+}
+
+#surf {
+    grid-area: surf;
+    background-color: rgb(152, 152, 156);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+#led {
+    grid-area: led;
+    background-image: url(../Images/led.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#calculator {
+    grid-area: calculator;
+    background-image: url(../Images/calc.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#pastel {
+    grid-area: pastel;
+    background-color: rgb(150, 133, 182);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#run {
+    grid-area: run;
+    background-image: url(../Images/run.jpg);
+    background-position: bottom;;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.text_box {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(150, 150, 235);
+    align-self: flex-start;
+    color: black;
+    padding: 3px;
+    margin-bottom: 10px;
+
+}
+
+.text_box p {
+    font-size: x-small;
+}
+
+.text_box 
 
 #contacts {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
+    border: 2px solid black;
 }
