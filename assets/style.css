@@ -281,16 +281,24 @@ span {
         background-color: rgb(74, 64, 95);
         color: rgb(217, 217, 241);
         display : flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
     }
     
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
     /* changing color for links */
     #header a {
         color: var(--darkback);
         text-decoration: none;
         border-bottom: 4px solid;
+        margin: 0 20px 0 20px;
+    
+
     }
     
     /* name box */
@@ -329,8 +337,9 @@ span {
     img {
         position : absolute;
         float: left;
-        margin-top: 250px;
-        margin-left: 20px;
+        margin-top: 130px;
+        margin-left: 0px;
+        height: 120px;
     }
     
     
@@ -363,6 +372,7 @@ span {
         margin-right: 5px;
         text-align: right;
         padding-right: 5px;
+        font-size: medium;
         }
     
         /* styling width size for right side  */
@@ -398,7 +408,6 @@ span {
     }
     
     #surf {
-        min-height: 210px;
         grid-area: surf;
         background-image: url(../images/02-portfolio-4.jpg);
         background-size: cover;
@@ -493,6 +502,7 @@ span {
     
     #contacts {
       display: flex;
+      flex-direction: column;
       justify-content: space-around;
       align-items: center;
       
